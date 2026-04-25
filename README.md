@@ -1,5 +1,9 @@
 # mailtm-cli
 
+[![npm version](https://img.shields.io/npm/v/mailtm-cli.svg)](https://www.npmjs.com/package/mailtm-cli)
+[![license](https://img.shields.io/npm/l/mailtm-cli.svg)](LICENSE)
+[![node](https://img.shields.io/node/v/mailtm-cli.svg)](https://nodejs.org)
+
 > Tiny CLI for [mail.tm](https://mail.tm) — disposable inboxes & OTP capture for shell scripts and CI.
 
 Useful when you need to automate signup/login flows that send a one-time code by email.
@@ -7,14 +11,15 @@ Useful when you need to automate signup/login flows that send a one-time code by
 ## Install
 
 ```bash
-# globally
-npm install -g mailtm-cli
-
-# or zero-install via npx
+# Zero install (recommended for one-shot use / CI)
 npx mailtm-cli new
+
+# Or install globally to use the `mailtm` command everywhere
+npm install -g mailtm-cli
+mailtm new
 ```
 
-Requires Node ≥ 18.
+Requires **Node ≥ 18** (uses native `fetch`).
 
 ## 60-second example
 
