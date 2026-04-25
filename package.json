@@ -1,0 +1,44 @@
+{
+  "name": "mailtm-cli",
+  "version": "0.1.0",
+  "description": "Tiny CLI for mail.tm — disposable inboxes & OTP capture for shell scripts and CI",
+  "license": "MIT",
+  "bin": {
+    "mailtm": "bin/mailtm.js"
+  },
+  "main": "src/index.js",
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/mailtm.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mail.tm",
+    "tempmail",
+    "disposable",
+    "otp",
+    "cli",
+    "ci",
+    "automation",
+    "testing"
+  ],
+  "author": "lucasaugustodev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasaugustodev/mailtm-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasaugustodev/mailtm-cli/issues"
+  },
+  "homepage": "https://github.com/lucasaugustodev/mailtm-cli#readme"
+}
